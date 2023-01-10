@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>开始使用 layui</title>
+    <link href="./js/layui/css/layui.css" rel="stylesheet">
 </head>
 <body>
-测试
+
+<img src="img/69771313_p0.jpg" alt="">
+
 </body>
+<!-- 你的 HTML 代码 -->
+
+<script src="./js/layui/layui.js"></script>
+<script>
+    layui.use(['layer', 'form'], function () {
+        var layer = layui.layer;
+        var form = layui.form;
+        layer.msg('Hello World');
+    });
+</script>
 </html>
